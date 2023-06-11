@@ -1,0 +1,123 @@
+@mixin fonts($font-size, $font-weight, $line-height) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+.hero__wrapper {
+    background-color: var(--dark);
+    height: 510px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    .hero__image {
+        mix-blend-mode: normal;
+        height: 100%;
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        img {
+            mix-blend-mode: normal;
+            height: 100%;
+        }
+        
+    }
+
+    .hero__info {
+        color: #FFFFFF;
+        text-align: center;
+        max-width: 380px;
+        height: 100%;
+        margin: 0 1.5rem;
+    
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .hero__title {
+            @include fonts(2.25rem, 700, 40px);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1.3px;
+        }
+    
+        .hero__product {
+            @include fonts(0.875rem, 400, 19px);
+            letter-spacing: 10px;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+    
+        .hero__desc {
+            @include fonts(0.9375rem, 500, 25px);
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 1.75rem;
+        }
+    
+        button {
+            @include fonts(13px, 700, 18px);
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            background-color: var(--orange);
+            padding: 15px 30px;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+
+            &:hover {
+                cursor: pointer;
+                background-color: var(--orange-light);
+                transition: all 0.3s;
+            }
+        }
+    
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 640px;
+
+        .hero__info {
+            .hero__title {
+                @include fonts(3.5rem, 700, 3.625rem);
+                letter-spacing: 2px;
+            }
+
+            .hero__product {
+                margin-bottom: 1.5rem;
+            }
+
+            .hero__desc {
+                margin-bottom: 2.5rem;
+            }
+        }
+        
+        .hero__image img {
+            width: 80%;
+        }
+    }
+
+    @media screen and (min-width: 1140px) {
+        display: flex;
+        padding-left: 165px;
+        // padding-right: 165px;
+
+        .hero__info {
+            position: initial;
+            text-align: start;
+            align-items: flex-start;
+        }
+
+        .hero__image img {
+            width: auto;
+        }
+    }
+}
+

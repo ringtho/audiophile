@@ -5,11 +5,18 @@ import instagram from '../assets/shared/desktop/icon-instagram.svg'
 import twitter from '../assets/shared/desktop/icon-twitter.svg'
 import cart from '../assets/shared/desktop/icon-cart.svg'
 
+import heroMobile from '../assets/home/mobile/image-header.jpg'
+import heroTablet from '../assets/home/tablet/image-header.jpg'
+import hero from '../assets/home/tablet/hero.webp'
+
 export default {
   hamburgerMenu,
   logo,
   facebook,
   instagram,
   twitter,
-  cart
+  cart,
+  heroMobile,
+  heroTablet,
+  hero
 }
