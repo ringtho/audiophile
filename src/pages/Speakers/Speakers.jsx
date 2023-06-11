@@ -1,11 +1,12 @@
 import React from 'react'
 import './Speakers.scss'
-import { Navbar, Footer } from '../../components'
+import { Navbar, Footer, Header } from '../../components'
 
 const Speakers = () => {
   return (
     <div>
       <Navbar />
+      <Header page="speakers" />
       Speakers
       <Footer />
     </div>

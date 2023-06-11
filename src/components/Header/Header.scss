@@ -1,0 +1,28 @@
+
+.header__wrapper {
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+
+    padding: 2rem;
+
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 6.125rem;
+        padding-bottom: 6.125rem;
+
+        h2 {
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+        }
+    }
+}
