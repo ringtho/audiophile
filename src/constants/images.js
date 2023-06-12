@@ -15,7 +15,9 @@ import headphonesCategory from '../assets/shared/desktop/image-category-thumbnai
 import speakersCategory from '../assets/shared/desktop/image-category-thumbnail-speakers.png'
 
 import headphonesZX9 from '../assets/home/desktop/image-speaker-zx9.png'
+import headphoneszx7 from '../assets/home/desktop/ZX7-table.png'
 import homeCircles from '../assets/home/desktop/pattern-circles.svg'
+import earphonesYX1 from '../assets/home/tablet/image-earphones-yx1.jpg'
 
 export default {
   hamburgerMenu,
@@ -32,5 +34,7 @@ export default {
   headphonesCategory,
   speakersCategory,
   headphonesZX9,
+  headphoneszx7,
+  earphonesYX1,
   homeCircles
 }

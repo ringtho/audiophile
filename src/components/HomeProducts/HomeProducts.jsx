@@ -6,6 +6,7 @@ import images from '../../constants/images'
 const HomeProducts = () => {
   return (
     <div className='products__container'>
+
         <div className='products__wrapper'>
             <div className='products__circles'>
               <img src={images.homeCircles} alt='circles' />
@@ -20,6 +21,16 @@ const HomeProducts = () => {
                   <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
                   <Button text='see product' />
               </div>
+            </div>
+        </div>
+
+        <div className='speaker__wrapper'>
+            <div className='speaker__image'>
+              <img src={images.headphoneszx7} alt='speaker-img' />
+            </div>
+            <div className='speaker__info'>
+              <h3>ZX7 Speaker</h3>
+              <Button text='see product' />
             </div>
         </div>
     </div>
