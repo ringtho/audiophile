@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.scss'
 import images from '../../constants/images'
+import { Button } from '../index'
 
 const Hero = () => {
   return (
@@ -12,9 +13,7 @@ const Hero = () => {
         Experience natural, lifelike audio and exceptional build
         quality made for the passionate music enthusiast.
         </p>
-        <button>
-            SEE PRODUCT
-        </button>
+        <Button text='see product' />
       </div>
       <div className='hero__image'>
         <img src={images.hero} alt='hero-image' />

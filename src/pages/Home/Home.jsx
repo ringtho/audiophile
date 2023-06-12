@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss'
-import { Navbar, Footer, Hero, Menu } from '../../components'
+import { Navbar, Footer, Hero, Menu, HomeProducts } from '../../components'
 
 const Home = () => {
   return (
@@ -8,7 +8,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Menu />
-        Home
+      <HomeProducts />
       <Footer />
     </div>
   )

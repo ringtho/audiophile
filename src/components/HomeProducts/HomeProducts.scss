@@ -1,0 +1,44 @@
+@mixin fonts($font-size, $font-weight, $line-height) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+.products__container {
+    padding: 0 1.5rem;
+
+    .products__wrapper {
+        height: 600px;
+        border-radius: 0.5rem;
+        background-color: var(--orange);
+
+        .products__details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            padding: 0 1.5rem;
+
+            h2 {
+                @include fonts(2.25rem, 700, 2.5rem);
+                letter-spacing: 1.3px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+            }
+
+            p {
+                @include fonts(15px, 500, 25px);
+                color: rgba(255, 255, 255, 0.75);
+            }
+
+            button {
+                background-color: var(--dark);
+
+                &:hover {
+                    background-color: var(--dark-light);
+                }
+            }
+        }
+    }
+}

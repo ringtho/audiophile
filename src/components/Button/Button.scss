@@ -1,0 +1,23 @@
+@mixin fonts($font-size, $font-weight, $line-height) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+}
+
+button {
+    @include fonts(13px, 700, 18px);
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    background-color: var(--orange);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--orange-light);
+        transition: all 0.3s;
+    }
+}
+
