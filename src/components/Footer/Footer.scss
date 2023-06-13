@@ -13,7 +13,11 @@
     gap: 3rem;
     color: #FFF;
 
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 38px;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+    }
 
     hr {
         height: 4px;
@@ -56,6 +60,19 @@
                 }
             }
         }
+
+        @media screen and (min-width: 768px) {
+            align-items: flex-start;
+            text-align: left;
+            gap: 2rem;
+
+            .footer__ul {
+                .footer__menu {
+                    flex-direction: row;
+                    gap: 34px;
+                }
+            }
+        }
     }
 
     .footer__details {
@@ -84,6 +101,17 @@
                 justify-content: center;
                 align-items: center;
                 gap: 1rem;
+
+
+                i {
+                    color: #FFF;
+                    font-size: 1.5rem;
+
+                    &:hover {
+                        color: var(--orange);
+                        transition: all 0.3s;
+                    }
+                }
                 
             }
         }

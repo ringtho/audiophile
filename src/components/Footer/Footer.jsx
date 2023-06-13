@@ -41,13 +41,13 @@ const Footer = () => {
 
           <div className='footer__buttons'>
             <Link>
-              <img src={images.facebook} alt='facebook' />
+              <i className='fa-brands fa-square-facebook'></i>
             </Link>
             <Link>
-              <img src={images.twitter} alt='twitter' />
+              <i className='fa-brands fa-twitter'></i>
             </Link>
             <Link>
-              <img src={images.instagram} alt='instagram' />
+              <i className='fa-brands fa-instagram'></i>
             </Link>
           </div>
         </div>
