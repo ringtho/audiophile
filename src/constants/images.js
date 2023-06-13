@@ -19,6 +19,8 @@ import headphoneszx7 from '../assets/home/desktop/ZX7-table.png'
 import homeCircles from '../assets/home/desktop/pattern-circles.svg'
 import earphonesYX1 from '../assets/home/tablet/image-earphones-yx1.jpg'
 
+import bestGearImg from '../assets/shared/tablet/image-best-gear.jpg'
+
 export default {
   hamburgerMenu,
   logo,
@@ -36,5 +38,6 @@ export default {
   headphonesZX9,
   headphoneszx7,
   earphonesYX1,
-  homeCircles
+  homeCircles,
+  bestGearImg
 }

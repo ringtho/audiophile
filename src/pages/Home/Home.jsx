@@ -1,6 +1,13 @@
 import React from 'react'
 import './Home.scss'
-import { Navbar, Footer, Hero, Menu, HomeProducts } from '../../components'
+import {
+  Navbar,
+  Footer,
+  Hero,
+  Menu,
+  HomeProducts,
+  FooterBanner
+} from '../../components'
 
 const Home = () => {
   return (
@@ -9,6 +16,7 @@ const Home = () => {
       <Hero />
       <Menu />
       <HomeProducts />
+      <FooterBanner />
       <Footer />
     </div>
   )
