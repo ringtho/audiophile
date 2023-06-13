@@ -25,13 +25,24 @@ const HomeProducts = () => {
         </div>
 
         <div className='speaker__wrapper'>
-            <div className='speaker__image'>
-              <img src={images.headphoneszx7} alt='speaker-img' />
-            </div>
-            <div className='speaker__info'>
-              <h3>ZX7 Speaker</h3>
-              <Button text='see product' />
-            </div>
+          <div className='speaker__image'>
+            <img src={images.headphoneszx7} alt='speaker-img' />
+          </div>
+          <div className='speaker__info'>
+            <h3>ZX7 Speaker</h3>
+            <Button text='see product' />
+          </div>
+        </div>
+
+        <div className='earphones__wrapper'>
+          <div className='earphones__image'>
+            <img src={images.earphonesYX1} alt='earphones-image' />
+          </div>
+
+          <div className='earphones__info'>
+            <h3>YX1 Earphones</h3>
+            <Button text='see product' />
+          </div>
         </div>
     </div>
   )
