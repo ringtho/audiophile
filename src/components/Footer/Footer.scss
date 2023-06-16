@@ -47,6 +47,8 @@
         align-items: center;
         justify-content: center;
         gap: 3rem;
+        width: 100%;
+
 
         text-align: center;
 
@@ -91,26 +93,47 @@
         }
 
         @media screen and (min-width: 1140px) {
-
-            // check ouit for errors
             flex-direction: row;
             gap: 0;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid red;
         }
     }
 
     .footer__details {
         text-align: center;
-
         display: flex;
         flex-direction: column;
         gap: 3rem;
 
-        p {
+        .footer__info {
+            .large {
+                display: none;
+            }
+
+            p {
             color: rgba(255,255,255,0.5);
             @include fonts(15px, 500, 25px);
+            }
+
+            .footer__buttons.large{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+
+                i {
+                    color: #FFF;
+                    font-size: 1.5rem;
+
+                    &:hover {
+                        color: var(--orange);
+                        transition: all 0.3s;
+                    }
+                }
+                
+            }
         }
 
         .footer__copyright {
@@ -119,6 +142,7 @@
             gap: 3rem;
 
             p {
+                color: rgba(255,255,255,0.5);
                 @include fonts(15px, 700, 25px);
             }
 
@@ -150,6 +174,33 @@
                 flex-direction: row;
                 justify-content: space-between;
             }
+        }
+
+        @media screen and (min-width: 1140px) {
+            .footer__info {
+
+                display: flex;
+                p {
+                    width: 50%;
+                }
+
+                .footer__buttons.large {
+                    align-items: flex-end;
+                    justify-content: flex-end;
+                    width: 50%;
+                }
+
+                .large {
+                    display: block;
+                }
+            }
+
+            .footer__copyright {
+                .small {
+                    display: none;
+                }
+            }
+
         }
     }
 }
