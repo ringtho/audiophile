@@ -14,3 +14,34 @@
   box-sizing: border-box;
   font-family: 'Manrope', sans-serif;
 }
+
+.footer-banner {
+  padding: 7.5rem 1.5rem;
+
+  
+}
+
+.menu {
+  padding: 2.5rem 1.5rem 0 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-banner {
+    padding: 6rem 2.5rem;
+  }
+
+  .menu {
+    padding: 6rem 2.5rem 0 2.5rem;
+  }
+  
+}
+
+@media screen and (min-width: 1140px) {
+  .footer-banner {
+    padding: 200px 165px;
+  }
+
+  .menu {
+    padding: 120px 165px 0 165px;
+  }
+}

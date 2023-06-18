@@ -5,7 +5,9 @@
 }
 
 .products__container {
-    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
     .products__wrapper {
         height: 600px;
@@ -90,8 +92,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding: 0 2.5rem;
-
+        gap: 2rem;
         .products__wrapper {
             height: 720px;
             .products {
@@ -125,7 +126,7 @@
     }
 
     @media screen and (min-width: 1140px) {
-        padding: 0 165px;
+        gap: 3rem;
 
         .products__wrapper {
             height: 540px;

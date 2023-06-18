@@ -14,9 +14,15 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      <Menu />
-      <HomeProducts />
-      <FooterBanner />
+      <div className='menu'>
+        <Menu />
+      </div>
+      <div className='home-products'>
+        <HomeProducts />
+      </div>
+      <div className='footer-banner'>
+        <FooterBanner />
+      </div>
       <Footer />
     </div>
   )
