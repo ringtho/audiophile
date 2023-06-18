@@ -107,7 +107,7 @@
         gap: 3rem;
 
         .footer__info {
-            .large {
+            #large {
                 display: none;
             }
 
@@ -184,14 +184,24 @@
                     width: 50%;
                 }
 
-                .footer__buttons.large {
+                .footer__buttons#large{
+                    display: flex;
                     align-items: flex-end;
                     justify-content: flex-end;
                     width: 50%;
-                }
-
-                .large {
-                    display: block;
+                    gap: 1rem;
+    
+    
+                    i {
+                        color: #FFF;
+                        font-size: 1.5rem;
+    
+                        &:hover {
+                            color: var(--orange);
+                            transition: all 0.3s;
+                        }
+                    }
+                    
                 }
             }
 

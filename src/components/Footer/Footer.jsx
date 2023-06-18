@@ -37,7 +37,7 @@ const Footer = () => {
             are devoted to helping you get the most out of personal audio.
             Come and visit our demo facility - we’re open 7 days a week.
           </p>
-          <div className='footer__buttons large'>
+          <div id='large' className='footer__buttons large'>
             <Link>
               <i className='fa-brands fa-square-facebook'></i>
             </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
         <div className='footer__copyright'>
           <p>Copyright 2023. All Rights Reserved</p>
 
-          <div className='footer__buttons small'>
+          <div id='small' className='footer__buttons small'>
             <Link>
               <i className='fa-brands fa-square-facebook'></i>
             </Link>
