@@ -1,13 +1,18 @@
 import React from 'react'
 import './Earphones.scss'
-import { Navbar, Footer, Header } from '../../components'
+import { Navbar, Footer, Header, FooterBanner, Menu } from '../../components'
 
 const Earphones = () => {
   return (
     <div>
       <Navbar />
       <Header page="earphones" />
-      Earphones
+      <div className='menu-category'>
+        <Menu />
+      </div>
+      <div className='footer-banner-category'>
+        <FooterBanner />
+      </div>
       <Footer />
     </div>
   )
