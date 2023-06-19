@@ -10,6 +10,7 @@ const ProductCard = ({ image, title, description, newProduct }) => {
           <img src={image} alt={title} />
         </div>
         <div className='product__details'>
+          {newProduct && <h4>NEW PRODUCT</h4>}
           <h2>{title}</h2>
           <p>{description}</p>
           <Button text="see product" />

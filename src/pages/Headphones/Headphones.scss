@@ -1,0 +1,23 @@
+.product-card {
+    display: flex;
+    gap: 120px;
+    flex-direction: column;
+  
+    padding: 4rem 1.5rem 0 1.5rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 120px 40px 0 40px;
+    }
+
+    @media screen and (min-width: 1140px) {
+        padding: 160px 165px 0 165px;
+        gap: 10rem;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+
+    .product-card .product__container:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
