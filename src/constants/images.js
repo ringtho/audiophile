@@ -21,6 +21,10 @@ import earphonesYX1 from '../assets/home/tablet/image-earphones-yx1.jpg'
 
 import bestGearImg from '../assets/shared/tablet/image-best-gear.jpg'
 
+import xx59Category from '../assets/product-xx59-headphones/desktop/image-category-page-preview.jpg'
+import xx99CategoryMarkOne from '../assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg'
+import xx99CategoryMarkTwo from '../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg'
+
 export default {
   hamburgerMenu,
   logo,
@@ -39,5 +43,8 @@ export default {
   headphoneszx7,
   earphonesYX1,
   homeCircles,
-  bestGearImg
+  bestGearImg,
+  xx59Category,
+  xx99CategoryMarkOne,
+  xx99CategoryMarkTwo
 }
