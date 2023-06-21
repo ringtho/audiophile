@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Earphones, Headphones, Home, Speakers } from './pages'
+import { Earphones, Headphones, Home, Speakers, ProductDetail } from './pages'
 
 function App () {
   return (
@@ -10,6 +10,7 @@ function App () {
         <Route element={<Speakers />} path='/speakers' />
         <Route element={<Headphones />} path='headphones' />
         <Route element={<Earphones />} path='earphones' />
+        <Route element={<ProductDetail />} path='/:category/:id' />
       </Routes>
     </BrowserRouter>
   )
