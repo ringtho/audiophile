@@ -25,6 +25,11 @@ import xx59Category from '../assets/product-xx59-headphones/desktop/image-catego
 import xx99CategoryMarkOne from '../assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg'
 import xx99CategoryMarkTwo from '../assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg'
 
+import zx9Category from '../assets/product-zx9-speaker/desktop/image-category-page-preview.jpg'
+import zx7Category from '../assets/product-zx7-speaker/desktop/image-category-page-preview.jpg'
+
+import yx1Category from '../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg'
+
 export default {
   hamburgerMenu,
   logo,
@@ -46,5 +51,8 @@ export default {
   bestGearImg,
   xx59Category,
   xx99CategoryMarkOne,
-  xx99CategoryMarkTwo
+  xx99CategoryMarkTwo,
+  zx7Category,
+  zx9Category,
+  yx1Category
 }
